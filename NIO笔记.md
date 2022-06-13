@@ -166,13 +166,17 @@ Java NIO管道是两个线程之间的单向数据连接。Pipi又一个source�
 5. 通过CompletionHandler写数据
 ## 6.4 字符集（Charset）
 - Charset 常用静态方法
-    public static Charset forName(String charsetName)//通过编码类型获得 Charset 对象
-    public static SortedMap<String,Charset> availableCharsets()//获得系统支持的所有编码方式
-    public static Charset defaultCharset()//获得虚拟机默认的编码方式
-    public static boolean isSupported(String charsetName)//判断是否支持该编码类型
+```
+public static Charset forName(String charsetName)//通过编码类型获得 Charset 对象
+public static SortedMap<String,Charset> availableCharsets()//获得系统支持的所有编码方式
+public static Charset defaultCharset()//获得虚拟机默认的编码方式
+public static boolean isSupported(String charsetName)//判断是否支持该编码类型
+```
 - Charset 常用普通方法
-    public final String name()//获得 Charset 对象的编码类型(String)
-    public abstract CharsetEncoder newEncoder()//获得编码器对象
-    public abstract CharsetDecoder newDecoder()//获得解码器对象
+```
+public final String name()//获得 Charset 对象的编码类型(String)
+public abstract CharsetEncoder newEncoder()//获得编码器对象
+public abstract CharsetDecoder newDecoder()//获得解码器对象
+```
 # 第七章 综合案例
 
